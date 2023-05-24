@@ -1,0 +1,25 @@
+package javaapplication1;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author LABORATORIO 04
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        
+        int name =Integer.parseInt(JOptionPane.showInputDialog(null, "1 o 2"));
+        if (name==1){
+            JOptionPane.showMessageDialog(null, "Hola");
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Adios");
+        }
+    }
+    
+}
