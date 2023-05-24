@@ -11,18 +11,23 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Se establecen variables vacias 
         String lectura = "";
         String name = "";
         double salario;
         double deduccion;
         double neto;
         
+        //Se solicitan los datoa al usuario 
         name = JOptionPane.showInputDialog("Digite su nombre:");
         lectura = JOptionPane.showInputDialog("Digite su salario semanal:");
         salario = Double.parseDouble(lectura);
+        //Se crean variables con las operaciones matematicas necesarias 
         salario = salario * 4;
         deduccion = salario*0.0934;
         neto = salario-deduccion;
+        
+        //Se muestra en pantalla la informacion al usuario 
         JOptionPane.showMessageDialog(null,"Estimado "+name+" el salario de este mes se desglosa de la siguiente manera.\n"+
 "Salario bruto: "+salario+"\nDeducciones: "+deduccion+"\nSalario Neto: "+neto);
     }
