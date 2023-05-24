@@ -2,7 +2,7 @@ package javaapplication1;
 import javax.swing.JOptionPane;
 /**
  *
- * @author LABORATORIO 04
+ * @author LABORATORIO 04  //Aca dice eso porque lo hice en el LAB 
  */
 public class JavaApplication1 {
 
@@ -11,15 +11,18 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String lectura = "";
+        String name = "";
+        double salario;
         
+        name = JOptionPane.showInputDialog("Digite su nombre:");
+        lectura = JOptionPane.showInputDialog("Digite su salario semanal:");
+        salario = Double.parseDouble(lectura);
+        salario = salario * 4;
+      
         
-        int name =Integer.parseInt(JOptionPane.showInputDialog(null, "1 o 2"));
-        if (name==1){
-            JOptionPane.showMessageDialog(null, "Hola");
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "Adios");
-        }
+        JOptionPane.showMessageDialog(null,"Estimado " +name+ " el salario de este mes se desglosa de la siguiente manera.\n"+
+"Salario bruto: "+salario+"\nDeducciones:"+(salario*0.0934)+"\nSalario Neto: "+(salario-(salario*0.0934)));
     }
     
 }
