@@ -1,0 +1,34 @@
+package semana.pkg3;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author ovied
+ */
+public class Semana3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    /*   
+        for (int i=0;i<5;++i){
+            System.out.println("@@@@@@@@@@");*/
+    /*
+        String read = "";
+        int number;
+        read = JOptionPane.showInputDialog(null,"Ingrese el numero por multiplicar");
+        number = Integer.parseInt(read);
+     
+        for (int i=0;i<11;++i){
+           System.out.print(number+" X "+i+" = "+number*i+"\n");
+           */
+        
+        for (int x=20;x<31;++x){
+            int number = (int)(Math.pow(x, 2));
+            System.out.print("El valor "+x+" al cuadrado es de:"+number+"\n");
+  
+        }
+    }
+}    
+    
