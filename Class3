@@ -1,0 +1,107 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package semana.pkg3;
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+/**
+ *
+ * @author Carlos
+ */
+public class Semana3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+      /*Ejercicio 1
+      for (int i=0;i<5;i++){
+          System.out.println("@@@@@@@@@@");}*/
+      /*Ejercicio 2
+      String read = JOptionPane.showInputDialog("Digite un numero para ver su tabla de multiplicacion");
+      int number = Integer.parseInt(read);
+      String results = "";
+      for (int i=1;i<=10;i++){
+          int result = i * number;
+          results += number+" X "+i+" = "+result+"\n";
+           }
+        JOptionPane.showMessageDialog(null, results);*/
+     /*Ejercicio 3
+     String read = JOptionPane.showInputDialog("Digite un numero");
+     int number = Integer.parseInt(read);
+     for (int i=1;i<=number;i++){
+         for (int x=1;x<=i;x++){
+             System.out.print("*");
+         }
+         System.out.print("\n");
+     }*/
+     /*Ejercicio 4
+     String results = "";
+     for (int x=20;x<=30;x++){
+         System.out.println(x+" al cuadrado es "+x*x);       
+     }*/
+    /*Ejercicio 5
+    String read = JOptionPane.showInputDialog("Digite la cantidad de estudiantes");
+    int students = Integer.parseInt(read);
+    int promedio = 0;
+    int mayor = 0;
+    int menor= 100;
+    int aprobados = 0;
+    int suma = 0;
+    for (int i = 0; i<students; i++){
+        String read2 = JOptionPane.showInputDialog("Digite la nota del estudiante "+(i+1));
+        int notes = Integer.parseInt(read2);
+        suma +=notes;
+        if (notes<=menor){
+            menor=notes;
+        }
+        if (notes>=mayor){
+            mayor=notes;
+        }
+        if (notes>=70){
+            aprobados++;
+        }  
+    }
+    promedio=suma/students;
+    JOptionPane.showMessageDialog(null, "La nota menor es de "+menor+"\n"+"La nota mayor es de "+mayor+"\n"
+            + "Estudiantes aprobados "+aprobados+"\n"+"El promedio es de "+promedio);*/
+   //Ejercicio 6
+    
+    int mayor = 0;
+    int menor= 100;
+    int aprobados = 0;
+    int suma = 0;
+    int numero,elementos = 0;
+    float promedio;
+    numero = 1;
+    while ( numero >= 0){
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Digite la nota del estudiante o cero para salir "));
+        suma += numero;
+        elementos++;
+        if (numero==0){
+            break;
+        }
+        if (numero<=menor){
+            menor=numero;
+        }
+        if (numero>=mayor){
+            mayor=numero;
+        }
+        if (numero>=70){
+            aprobados++;
+        }  
+    }
+    if(elementos==0){
+        System.out.println("Error, digite otro numero");
+    }
+    else{
+        promedio = (float) suma/elementos;
+        JOptionPane.showMessageDialog(null, "La nota menor es de "+menor+"\n"+"La nota mayor es de "+mayor+"\n"
+            + "Estudiantes aprobados "+aprobados+"\n"+"El promedio es de "+promedio);
+    }
+    
+    
+        }  
+    }
