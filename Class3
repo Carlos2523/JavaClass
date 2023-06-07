@@ -2,24 +2,33 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package semana.pkg3;
+package pkgclass.pkg3;
 import javax.swing.JOptionPane;
-import java.util.Scanner;
+
 /**
  *
- * @author Carlos
+ * @author ovied
  */
-public class Semana3 {
+public class Class3 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-      /*Ejercicio 1
+        //Ejercicio1();
+        //Ejercicio2();
+        //Ejercicio3();
+        //Ejercicio4();
+        //Ejercicio5();
+        //Ejercicio6();
+
+    }
+public static void Ejercicio1(){
       for (int i=0;i<5;i++){
-          System.out.println("@@@@@@@@@@");}*/
-      /*Ejercicio 2
+          System.out.println("@@@@@@@@@@");}
+    }
+public static void Ejercicio2(){
       String read = JOptionPane.showInputDialog("Digite un numero para ver su tabla de multiplicacion");
       int number = Integer.parseInt(read);
       String results = "";
@@ -27,8 +36,10 @@ public class Semana3 {
           int result = i * number;
           results += number+" X "+i+" = "+result+"\n";
            }
-        JOptionPane.showMessageDialog(null, results);*/
-     /*Ejercicio 3
+    
+        JOptionPane.showMessageDialog(null, results);
+    }
+public static void Ejercicio3(){
      String read = JOptionPane.showInputDialog("Digite un numero");
      int number = Integer.parseInt(read);
      for (int i=1;i<=number;i++){
@@ -36,13 +47,15 @@ public class Semana3 {
              System.out.print("*");
          }
          System.out.print("\n");
-     }*/
-     /*Ejercicio 4
+        }
+    }
+public static void Ejercicio4(){
      String results = "";
      for (int x=20;x<=30;x++){
          System.out.println(x+" al cuadrado es "+x*x);       
-     }*/
-    /*Ejercicio 5
+        }
+    }
+public static void Ejercicio5(){
     String read = JOptionPane.showInputDialog("Digite la cantidad de estudiantes");
     int students = Integer.parseInt(read);
     int promedio = 0;
@@ -66,8 +79,9 @@ public class Semana3 {
     }
     promedio=suma/students;
     JOptionPane.showMessageDialog(null, "La nota menor es de "+menor+"\n"+"La nota mayor es de "+mayor+"\n"
-            + "Estudiantes aprobados "+aprobados+"\n"+"El promedio es de "+promedio);*/
-   //Ejercicio 6
+            + "Estudiantes aprobados "+aprobados+"\n"+"El promedio es de "+promedio);
+    }
+public static void Ejercicio6(){
     
     int mayor = 0;
     int menor= 100;
@@ -100,8 +114,6 @@ public class Semana3 {
         promedio = (float) suma/elementos;
         JOptionPane.showMessageDialog(null, "La nota menor es de "+menor+"\n"+"La nota mayor es de "+mayor+"\n"
             + "Estudiantes aprobados "+aprobados+"\n"+"El promedio es de "+promedio);
-    }
-    
-    
+            }
         }  
     }
