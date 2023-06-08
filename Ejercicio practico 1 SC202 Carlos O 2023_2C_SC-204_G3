@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ejercicio.practico.pkg1;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LABORATORIO 04
+ */
+public class EjercicioPractico1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Ejercicio1();
+    }
+    public static void Ejercicio1(){
+        //Se establecen variables vacias 
+        
+        String read = JOptionPane.showInputDialog("Digite la cantidad de empleados");
+        String lectura = "";
+        double salario;
+        double deductionSEM;
+        double deductionIVM;
+        int sum = 0;
+        int total = 0;
+        int number = Integer.parseInt(read);
+        for (int i=0;i<number;i++){
+             String data2 = JOptionPane.showInputDialog("Digite el salario del empleado "+(i+1));
+             int salary = Integer.parseInt(data2);
+             sum+=salary;
+             
+       }
+       deductionSEM = sum *0.0925;
+       deductionIVM = sum * 0.0508;
+         
+        JOptionPane.showMessageDialog(null,"La suma por pagar a la CCSS es "+sum);
+        
+       
+    }
+}
